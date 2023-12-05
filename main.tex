@@ -1,3 +1,4 @@
+% COPYRIGHT © by Tomasz Kiźling
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 % \loadspellchecklist[pl]
@@ -21,6 +22,10 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{tikzpagenodes}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}} % tab
+\definecolor{redd}{HTML}{88100d}
+
 \fancyhead{} % clear all header fields
 \renewcommand{\headrulewidth}{0pt}
 \lhead{\begin{tikzpicture}[remember picture,overlay]
@@ -34,8 +39,6 @@
 Katedra Telekomunikacji i Teleinformatyki\\}}
 \fancyfoot{}
 \fancyfoot[R]{Strona \thepage}
-
-\definecolor{redd}{HTML}{88100d}
 
 \begin{document}
 % \thispagestyle{empty} % title page style without headers or footers
@@ -60,7 +63,7 @@ oraz bilans łącza radiowego.
 \multicolumn{2}{V{5}l|}{Data wykonania ćwiczenia}                                   & \multicolumn{2}{lV{5}}{25 kwietnia 2017}                 & \multicolumn{1}{lV{5}}{\cellcolor[HTML]{FFFFC7}}                                                  \\ \cline{1-4}
 \multicolumn{2}{V{5}l|}{Data oddania sprawozdania}                                  & \multicolumn{2}{lV{5}}{09 maja 2017}                     & \multicolumn{1}{lV{5}}{\cellcolor[HTML]{FFFFC7}}                                                  \\ \cline{1-4}
 \multicolumn{2}{V{5}l|}{Prowadzący}                                                 & \multicolumn{2}{lV{5}}{dr hab. inż. Piotr Słobodzian}    & \multicolumn{1}{lV{5}}{\multirow{-3}{*}{\cellcolor[HTML]{FFFFC7}}}                                \\ \hlineB{6}
-\multicolumn{5}{V{5}lV{5}}{\begin{tabular}[c]{@{}l@{}}\color{redd}\textbf{UWAGI} (wypełnia prowadzący):\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  1\end{tabular}}                                                                                                              \\ \hlineB{6}
+\multicolumn{5}{V{5}lV{5}}{\begin{tabular}[c]{@{}l@{}}\color{redd}\textbf{UWAGI} (wypełnia prowadzący):\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  \end{tabular}}                                                                                                              \\ \hlineB{6}
 \end{tabular}
 \end{adjustbox}
 \end{table}
