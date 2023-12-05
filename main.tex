@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+% \loadspellchecklist[pl]
+\usepackage{hyperref}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{hhline}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{array}
+\usepackage{boldline}
+\usepackage{transparent}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage[left=2cm,top=3.9cm,right=2cm,bottom=2cm,headsep=2cm]{geometry}
+\pagestyle{fancy}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{tikzpagenodes}
+\fancyhead{} % clear all header fields
+\renewcommand{\headrulewidth}{0pt}
+\lhead{\begin{tikzpicture}[remember picture,overlay]
+{\transparent{0.5}
+\includegraphics[width=8cm]{logo PWr kolor poziom.png}}
+\end{tikzpicture}}
+
+\rhead{
+{\transparent{0.6}
+ Wydział Elektroniki\\
+Katedra Telekomunikacji i Teleinformatyki\\}}
+\fancyfoot{}
+\fancyfoot[R]{Strona \thepage}
+
+\definecolor{redd}{HTML}{88100d}
+
+\begin{document}
+% \thispagestyle{empty} % title page style without headers or footers
+\begin{table}[ht!]
+\begin{adjustbox}{height=\textheight, width=\textwidth, keepaspectratio}
+\begin{tabular}{|lcllcV{5}}
+\hlineB{6}
+\multicolumn{1}{V{5}l|}{Specjalność:}                   & \multicolumn{3}{l|}{\cellcolor[HTML]{FFFFC7}Nazwa zajęć:}                         &                                                                                                \\
+\multicolumn{1}{V{5}c|}{}                               & \multicolumn{3}{c|}{\cellcolor[HTML]{FFFFC7}}                                     &                                                                                                \\
+\multicolumn{1}{V{5}c|}{}                               & \multicolumn{3}{c|}{\cellcolor[HTML]{FFFFC7}}                                     &                                                                                                \\
+\multicolumn{1}{V{5}c|}{\multirow{-3}{*}{\Large\textbf{TSI}}} & \multicolumn{3}{c|}{\multirow{-3}{*}{\cellcolor[HTML]{FFFFC7}\Large \color{redd}\textbf{LABORATORIUM ANTEN}}} & \multirow{-4}{*}{\begin{tabular}[c]{@{}c@{}}TERMIN\\ Wtorek\\ \large\textbf{P/N}\\ 7:30 - 11:00\end{tabular}} \\ \hlineB{6}
+\multicolumn{4}{V{5}l|}{Osoby wykonujące ćwiczenie:}                                                                                        & \multicolumn{1}{lV{5}}{Nr Grupy}                                                                  \\
+\multicolumn{4}{V{5}l|}{\begin{tabular}[c]{@{}l@{}}\hspace*{2cm}1. Pan/Pani X\\ \hspace*{2cm}2. Pan/Pani Y\\ \hspace*{2cm}3. Pan/Pani Z\end{tabular}}                              & \Large\textbf{5}                                                                                     \\ \hlineB{6}
+\multicolumn{4}{V{5}l|}{Tytuł ćwiczenia:}                                                                                                   & \multicolumn{1}{lV{5}}{Nr ćwiczenia}                                                              \\
+\multicolumn{4}{V{5}c|}{}                                                                                                                   &                                                                                                \\
+\multicolumn{4}{V{5}c|}{}                                                                                                                   &                                                                                                \\
+\multicolumn{4}{V{5}c|}{\multirow{-3}{*}{\begin{tabular}[c]{@{}c@{}}Dobór zysku energetycznego anteny odbiorczej w oparciu\\ 
+o pomiary poziomu sygnału użytecznego, obliczenia propagacyjne \\
+oraz bilans łącza radiowego.
+\\ \end{tabular}}}                                            & \multirow{-3}{*}{\Large\textbf{2}}                                                                   \\ \hlineB{6}
+\multicolumn{2}{V{5}l|}{Sprawozdanie opracował}                                     & \multicolumn{2}{lV{5}}{Pan/Pani X}                       & \cellcolor[HTML]{FFFFC7}OCENA                                                                  \\ \cline{1-4}
+\multicolumn{2}{V{5}l|}{Data wykonania ćwiczenia}                                   & \multicolumn{2}{lV{5}}{25 kwietnia 2017}                 & \multicolumn{1}{lV{5}}{\cellcolor[HTML]{FFFFC7}}                                                  \\ \cline{1-4}
+\multicolumn{2}{V{5}l|}{Data oddania sprawozdania}                                  & \multicolumn{2}{lV{5}}{09 maja 2017}                     & \multicolumn{1}{lV{5}}{\cellcolor[HTML]{FFFFC7}}                                                  \\ \cline{1-4}
+\multicolumn{2}{V{5}l|}{Prowadzący}                                                 & \multicolumn{2}{lV{5}}{dr hab. inż. Piotr Słobodzian}    & \multicolumn{1}{lV{5}}{\multirow{-3}{*}{\cellcolor[HTML]{FFFFC7}}}                                \\ \hlineB{6}
+\multicolumn{5}{V{5}lV{5}}{\begin{tabular}[c]{@{}l@{}}\color{redd}\textbf{UWAGI} (wypełnia prowadzący):\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  1\end{tabular}}                                                                                                              \\ \hlineB{6}
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\newpage
+\section{First section}
+Type your document as usual!
+\newpage
+\section{Second section}
+Type your document as usual!
+
+\end{document}
